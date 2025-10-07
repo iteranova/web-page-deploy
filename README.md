@@ -8,8 +8,6 @@ This branch contains the **compiled static site** built with **[Astro](https://a
 
 👉 **https://www.itera-nova.com**
 
-*(configured via a `CNAME` record in the repository root and DNS settings in Google Domains)*
-
 ---
 
 ## 🛠️ Deployment Info
