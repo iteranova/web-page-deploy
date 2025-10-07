@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IteraNova - Inovativne IT rešitve in razvoj programske opreme">
+    <title>IteraNova - IT rešitve in razvoj programske opreme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/IteraNovaPage/_astro/de.CplvYTNN.css">
+</head>
+
+<body class="font-sans text-gray-800 overflow-x-hidden">
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0"> <a href="#home" class="flex items-center gap-3"> <img src="/IteraNovaPage/logo3.svg"
+                            alt="IteraNova Logo" class="h-10 w-10 object-contain">
+                        <h1 class="text-3xl font-brand"> <span class="font-normal text-primary-dark1">Itera</span><span
+                                class="font-bold text-primary-dark2">Nova</span> </h1>
+                    </a> </div>
+                <ul class="hidden md:flex gap-8 items-center list-none">
+                    <li> <a href="#home"
+                            class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium"> Domov
+                        </a> </li>
+                    <li> <a href="#about"
+                            class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium"> O nas
+                        </a> </li>
+                    <li> <a href="#services"
+                            class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">
+                            Storitve </a> </li>
+                    <li> <a href="#process"
+                            class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium"> Naš
+                            proces </a> </li>
+                    <li> <a href="#whychooseus"
+                            class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium"> Zakaj
+                            mi </a> </li>
+                    <li> <a href="#contact"
+                            class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium"> Kontakt
+                        </a> </li>
+                    <li class="relative language-dropdown"> <button
+                            class="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-dark transition-all duration-300 flex items-center gap-2"
+                            id="language-button" aria-haspopup="true" aria-expanded="false"> SL <svg
+                                xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg> </button>
+                        <div class="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg hidden" id="language-menu"
+                            role="menu" aria-orientation="vertical" aria-labelledby="language-button"> <a href="/IteraNovaPage/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors "
+                                role="menuitem"> English </a><a href="/IteraNovaPage/de/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors "
+                                role="menuitem"> Deutsch </a><a href="/IteraNovaPage/sl/"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors bg-gray-50 font-semibold"
+                                role="menuitem"> Slovenščina </a> </div>
+                    </li>
+                </ul> <button id="mobile-menu-button"
+                    class="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5"
+                    aria-label="Toggle menu" aria-expanded="false"> <span
+                        class="block w-6 h-0.5 bg-gray-600 transition-all duration-300"></span> <span
+                        class="block w-6 h-0.5 bg-gray-600 transition-all duration-300"></span> <span
+                        class="block w-6 h-0.5 bg-gray-600 transition-all duration-300"></span> </button>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden overflow-hidden">
+                <ul class="flex flex-col py-4 space-y-2">
+                    <li> <a href="#home"
+                            class="block py-2 text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors duration-300 font-medium">
+                            Domov </a> </li>
+                    <li> <a href="#about"
+                            class="block py-2 text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors duration-300 font-medium">
+                            O nas </a> </li>
+                    <li> <a href="#services"
+                            class="block py-2 text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors duration-300 font-medium">
+                            Storitve </a> </li>
+                    <li> <a href="#process"
+                            class="block py-2 text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors duration-300 font-medium">
+                            Naš proces </a> </li>
+                    <li> <a href="#whychooseus"
+                            class="block py-2 text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors duration-300 font-medium">
+                            Zakaj mi </a> </li>
+                    <li> <a href="#contact"
+                            class="block py-2 text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors duration-300 font-medium">
+                            Kontakt </a> </li>
+                    <li class="pt-2 border-t border-gray-200">
+                        <div class="flex gap-2"> <a href="/IteraNovaPage/"
+                                class="px-3 py-2 rounded-md text-sm transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">
+                                EN </a><a href="/IteraNovaPage/de/"
+                                class="px-3 py-2 rounded-md text-sm transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200">
+                                DE </a><a href="/IteraNovaPage/sl/"
+                                class="px-3 py-2 rounded-md text-sm transition-colors bg-primary text-white"> SL </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script
+        type="module">document.addEventListener("DOMContentLoaded", () => { const o = document.getElementById("language-button"), s = document.getElementById("language-menu"); o && s && (o.addEventListener("click", d => { d.stopPropagation(); const n = s.classList.contains("hidden"); s.classList.toggle("hidden"), o.setAttribute("aria-expanded", n ? "true" : "false") }), document.addEventListener("click", () => { s.classList.add("hidden"), o.setAttribute("aria-expanded", "false") }), s.addEventListener("click", d => { d.stopPropagation() })); const e = document.getElementById("mobile-menu-button"), a = document.getElementById("mobile-menu"); e && a && (e.addEventListener("click", () => { const n = a.classList.contains("hidden"); a.classList.toggle("hidden"), e.setAttribute("aria-expanded", n ? "true" : "false"); const t = e.querySelectorAll("span"); n ? (t[0].style.transform = "rotate(45deg) translateY(8px)", t[1].style.opacity = "0", t[2].style.transform = "rotate(-45deg) translateY(-8px)") : (t[0].style.transform = "rotate(0) translateY(0)", t[1].style.opacity = "1", t[2].style.transform = "rotate(0) translateY(0)") }), a.querySelectorAll("a").forEach(n => { n.addEventListener("click", () => { a.classList.add("hidden"), e.setAttribute("aria-expanded", "false"); const t = e.querySelectorAll("span"); t[0].style.transform = "rotate(0) translateY(0)", t[1].style.opacity = "1", t[2].style.transform = "rotate(0) translateY(0)" }) })) });</script>
+    <section id="home"
+        class="h-screen flex items-center justify-center px-5 bg-primary-multi text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6">Gradimo inovativne programske rešitve za vas
+                </h2>
+                <p class="text-base md:text-xl mb-6 md:mb-8 opacity-90">Smo sodobno programersko podjetje, ki pretvarja
+                    ideje v zanesljive, razširljive in prilagojene digitalne rešitve.</p> <a href="#contact"
+                    class="inline-block px-6 md:px-8 py-3 md:py-3.5 bg-white text-primary rounded-md font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg text-sm md:text-base">
+                    Začnite zdaj </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="min-h-screen flex items-center justify-center px-5 py-20 md:py-0 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-900">O nas</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-base md:text-lg text-justify leading-relaxed mb-6 text-gray-600">Smo vodilno tehnološko
+                    podjetje, specializirano za inovativen razvoj programske opreme in IT rešitve. Združujemo
+                    najsodobnejšo tehnologijo s kreativnim reševanjem problemov, da zagotovimo programsko opremo, ki
+                    resnično naredi razliko.</p>
+                <p class="text-base md:text-lg text-justify leading-relaxed mb-6 text-gray-600">Naša ekipa izkušenih
+                    strokovnjakov je predana razumevanju edinstvenih izzivov vsakega odjemalca in zagotavljanju
+                    prilagojenih rešitev, pripravljenih na prihodnost, ki spodbujajo rast poslovanja in digitalno
+                    transformacijo. Ne glede na to, ali ste zagonsko podjetje ali uveljavljeno podjetje, sodelujemo z
+                    vami pri oblikovanju in razvoju učinkovitih, varnih in razširljivih aplikacij, ki vašemu podjetju
+                    pomagajo uspevati s tehnologijo.</p>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="min-h-screen flex items-center justify-center px-5 py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto w-full">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-900">Naše storitve</h2>
+            <div class="mb-8">
+                <div
+                    class="bg-primary-multi text-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 max-w-4xl mx-auto">
+                    <div class="text-5xl mb-4">💻</div>
+                    <h3 class="text-2xl font-bold mb-3">Razvoj programske opreme</h3>
+                    <p class="text-lg leading-relaxed opacity-95">Prilagojene programske rešitve za vaše poslovne
+                        potrebe, od spletnih aplikacij do podjetniških sistemov.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl md:text-5xl mb-3 md:mb-4">📊</div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-gray-900">Podatkovno inženirstvo</h3>
+                    <p class="text-sm md:text-base text-gray-600 leading-relaxed">Opolnomočite odločitve, ki temeljijo
+                        na podatkih, s skalabilnimi cevovodi, naprednim ETL, robustno podatkovno arhitekturo in
+                        inteligentnimi sistemi strojnega učenja.</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl md:text-5xl mb-3 md:mb-4">🔒</div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-gray-900">IT svetovanje</h3>
+                    <p class="text-sm md:text-base text-gray-600 leading-relaxed">Strateško IT svetovanje za
+                        optimizacijo vaših tehnoloških naložb in digitalne strategije.</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl md:text-5xl mb-3 md:mb-4">🎨</div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-gray-900">UI/UX oblikovanje</h3>
+                    <p class="text-sm md:text-base text-gray-600 leading-relaxed">Uporabniško usmerjeno oblikovanje, ki
+                        ustvarja intuitivne in privlačne digitalne izkušnje.</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl md:text-5xl mb-3 md:mb-4">⚙️</div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-gray-900">DevOps in avtomatizacija
+                    </h3>
+                    <p class="text-sm md:text-base text-gray-600 leading-relaxed">Poenostavite svoj razvojni proces s
+                        sodobnimi DevOps praksami in avtomatizacijo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="process" class="min-h-screen flex items-center justify-center px-5 py-20 md:py-0 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-900">Naš proces</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="relative">
+                    <div
+                        class="bg-primary-multi text-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="text-3xl font-bold mb-2 opacity-90">1</div>
+                        <h3 class="text-lg font-semibold mb-2">Odkrivanje</h3>
+                        <p class="text-sm opacity-90">Razumemo vaše cilje in izzive.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10"> <svg
+                            class="w-8 h-8 text-primary drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg> </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="bg-primary-multi text-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="text-3xl font-bold mb-2 opacity-90">2</div>
+                        <h3 class="text-lg font-semibold mb-2">Načrtovanje</h3>
+                        <p class="text-sm opacity-90">Oblikovanje načrta, prilagojenega vašim potrebam.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10"> <svg
+                            class="w-8 h-8 text-primary drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg> </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="bg-primary-multi text-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="text-3xl font-bold mb-2 opacity-90">3</div>
+                        <h3 class="text-lg font-semibold mb-2">Razvoj</h3>
+                        <p class="text-sm opacity-90">Gradnja razširljivih, varnih in učinkovitih rešitev.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10"> <svg
+                            class="w-8 h-8 text-primary drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg> </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="bg-primary-multi text-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="text-3xl font-bold mb-2 opacity-90">4</div>
+                        <h3 class="text-lg font-semibold mb-2">Dostava</h3>
+                        <p class="text-sm opacity-90">Lansiranje vašega izdelka z zaupanjem.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10"> <svg
+                            class="w-8 h-8 text-primary drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg> </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="bg-primary-multi text-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="text-3xl font-bold mb-2 opacity-90">5</div>
+                        <h3 class="text-lg font-semibold mb-2">Podpora</h3>
+                        <p class="text-sm opacity-90">Dolgoročno vzdrževanje in nadgradnje.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="whychooseus" class="min-h-screen flex items-center justify-center px-5 py-20 md:py-0 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-900">Zakaj izbrati nas</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <div
+                        class="flex items-center gap-4 bg-white p-5 md:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 bg-primary-light/30 rounded-full flex items-center justify-center group-hover:bg-primary-light/50 transition-colors duration-300">
+                                <span class="text-xl md:text-2xl">👥</span> </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-base md:text-lg font-semibold text-gray-900">Profesionalna in strastna ekipa
+                            </h3>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 bg-white p-5 md:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 bg-primary-light/30 rounded-full flex items-center justify-center group-hover:bg-primary-light/50 transition-colors duration-300">
+                                <span class="text-xl md:text-2xl">💬</span> </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-base md:text-lg font-semibold text-gray-900">Transparentna komunikacija</h3>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 bg-white p-5 md:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 bg-primary-light/30 rounded-full flex items-center justify-center group-hover:bg-primary-light/50 transition-colors duration-300">
+                                <span class="text-xl md:text-2xl">⏰</span> </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-base md:text-lg font-semibold text-gray-900">Dostava pravočasno</h3>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 bg-white p-5 md:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 bg-primary-light/30 rounded-full flex items-center justify-center group-hover:bg-primary-light/50 transition-colors duration-300">
+                                <span class="text-xl md:text-2xl">💰</span> </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-base md:text-lg font-semibold text-gray-900">Stroškovno učinkovite rešitve
+                            </h3>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 bg-white p-5 md:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="w-12 h-12 bg-primary-light/30 rounded-full flex items-center justify-center group-hover:bg-primary-light/50 transition-colors duration-300">
+                                <span class="text-xl md:text-2xl">🎯</span> </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-base md:text-lg font-semibold text-gray-900">Fokus na kakovost in
+                                inovativnost</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="min-h-screen flex items-center justify-center px-5 py-20 md:py-0 bg-white">
+        <div class="max-w-7xl mx-auto w-full">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-900">Stopite v stik</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
+                <div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-3 md:mb-4 text-gray-900">Kontaktne informacije</h3>
+                    <p class="text-sm md:text-base text-gray-600 leading-relaxed mb-4 md:mb-6">Pripravljeni začeti svoj
+                        projekt? Stopite v stik z nami še danes in razpravljajte o tem, kako lahko pomagamo spremeniti
+                        vaše ideje v resničnost.</p>
+                    <div class="mt-6 md:mt-8">
+                        <p class="mb-3 text-sm md:text-base"> <strong>E-pošta:</strong> info@itera-nova.com </p>
+                        <p class="mb-3 text-sm md:text-base"> <strong>Naslov:</strong> Rače, Slovenija </p>
+                    </div>
+                </div>
+                <div>
+                    <form id="contact-form" class="flex flex-col gap-3 md:gap-4"> <!-- Web3Forms Access Key --> <input
+                            type="hidden" name="access_key" value="7d427841-eb34-45d6-a3e8-0e5fc35bd9d3">
+                        <!-- Redirect after submission (optional) --> <input type="hidden" name="redirect"
+                            value="false"> <!-- Email recipient --> <input type="hidden" name="to_email"
+                            value="info@itera-nova.com"> <input type="text" name="name" placeholder="Vaše ime" required
+                            class="px-3 md:px-3.5 py-3 md:py-3.5 border border-gray-300 rounded-md text-sm md:text-base font-sans transition-colors duration-300 focus:outline-none focus:border-primary">
+                        <input type="email" name="email" placeholder="Vaš e-naslov" required
+                            class="px-3 md:px-3.5 py-3 md:py-3.5 border border-gray-300 rounded-md text-sm md:text-base font-sans transition-colors duration-300 focus:outline-none focus:border-primary">
+                        <input type="text" name="subject" placeholder="Zadeva" required
+                            class="px-3 md:px-3.5 py-3 md:py-3.5 border border-gray-300 rounded-md text-sm md:text-base font-sans transition-colors duration-300 focus:outline-none focus:border-primary">
+                        <textarea name="message" placeholder="Vaše sporočilo" rows="5" required
+                            class="px-3 md:px-3.5 py-3 md:py-3.5 border border-gray-300 rounded-md text-sm md:text-base font-sans resize-y transition-colors duration-300 focus:outline-none focus:border-primary"></textarea>
+                        <!-- Status message -->
+                        <div id="form-status" class="hidden text-sm md:text-base p-3 rounded-md"></div> <button
+                            type="submit" id="submit-button"
+                            class="px-6 md:px-8 py-3 md:py-3.5 bg-primary text-white rounded-md font-semibold transition-colors duration-300 hover:bg-primary-dark cursor-pointer border-none text-sm md:text-base">
+                            Pošlji sporočilo </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script
+        type="module">document.addEventListener("DOMContentLoaded", () => { const s = document.getElementById("contact-form"), e = document.getElementById("submit-button"), t = document.getElementById("form-status"); s && (s.addEventListener("submit", async a => { a.preventDefault(), e.disabled = !0, e.textContent = "Sending...", t.classList.add("hidden"); try { const n = new FormData(s), o = await (await fetch("https://api.web3forms.com/submit", { method: "POST", body: n })).json(); if (o.success) t.textContent = "Message sent successfully! We'll get back to you soon.", t.className = "text-sm md:text-base p-3 rounded-md bg-green-100 text-green-800 border border-green-300", t.classList.remove("hidden"), s.reset(); else throw new Error(o.message || "Failed to send message") } catch (n) { t.textContent = "Failed to send message. Please try again or email us directly at info@itera-nova.com", t.className = "text-sm md:text-base p-3 rounded-md bg-red-100 text-red-800 border border-red-300", t.classList.remove("hidden"), console.error("Form submission error:", n) } finally { e.disabled = !1, e.textContent = e.getAttribute("data-original-text") || "Send Message" } }), e.setAttribute("data-original-text", e.textContent || "Send Message")) });</script>
+    <footer class="bg-gray-900 text-white py-6 md:py-8 px-5 text-center">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-sm md:text-base">© 2025 IteraNova. Vse pravice pridržane.</p>
+        </div>
+    </footer>
+    <script
+        type="module">function o() { const n = document.querySelectorAll("section"), e = window.innerHeight; n.forEach(t => { const c = t.getBoundingClientRect(), s = c.top + c.height / 2, a = e / 2; let i = 1 - Math.abs(s - a) / e * 1.2; i = Math.max(.3, Math.min(1, i)), t.style.opacity = i.toString() }) } const r = window.matchMedia("(max-width: 768px)").matches; r || (document.body.addEventListener("scroll", d(o, 10)), window.addEventListener("resize", o), o()); function d(n, e) { let t; return function () { clearTimeout(t), t = setTimeout(n, e) } }</script>
+</body>
+
+</html>
