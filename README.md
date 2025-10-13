@@ -1,16 +1,20 @@
-# IteraNovaWebPage
+# 🌐 IteraNova WebPage
 
-A build branch for IteraNova Web Page
+## 🌍 Live Website
 
-## Building for Production
+👉 **https://www.itera-nova.com**
 
-To build the website for production:
+---
 
-```bash
-npm run build
-```
+## 🛠️ Deployment Info
 
-The astro.config.mjs file is different than in main. 
-The built files will be in the `dist/` directory. Files in `dist/` must be pushed to web-page-deploy repository. 
+- **Framework:** Astro  
+- **Styling:** Tailwind CSS  
+- **Hosting:** GitHub Pages  
+- **Custom Domain:** Google Domains  
+- **Output Folder:** `dist/`  
 
-For full setup, check DEV_DEP_SETUP.md.   
+---
+
+© 2025 IteraNova. All rights reserved.
+
