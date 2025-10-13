@@ -27,6 +27,5 @@ package-lock.json
 
 # Build outputs (if using any build tools in the future)
 build/
-dist/
 .cache/
 .astro/
