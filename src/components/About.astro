@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  paragraphs: string[];
+}
+
+const { title, paragraphs } = Astro.props;
+---
+
+<section id="about" class="min-h-screen flex items-center justify-center px-5 py-20 md:py-0 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-900">{title}</h2>
+    <div class="max-w-4xl mx-auto">
+      {paragraphs.map((paragraph) => (
+        <p class="text-base md:text-lg text-justify leading-relaxed mb-6 text-gray-600">{paragraph}</p>
+      ))}
+    </div>
+  </div>
+</section>

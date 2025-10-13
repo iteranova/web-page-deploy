@@ -1,0 +1,45 @@
+---
+interface Service {
+  icon: string;
+  title: string;
+  description: string;
+  featured?: boolean;
+}
+
+interface Props {
+  title: string;
+  services: Service[];
+}
+
+const { title, services } = Astro.props;
+const featuredService = services.find(s => s.featured);
+const regularServices = services.filter(s => !s.featured);
+---
+
+<section id="services" class="min-h-screen flex items-center justify-center px-5 py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto w-full">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-900">{title}</h2>
+    
+    {/* Featured service - full width on top */}
+    {featuredService && (
+      <div class="mb-8">
+        <div class="bg-primary-multi text-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 max-w-4xl mx-auto">
+          <div class="text-5xl mb-4">{featuredService.icon}</div>
+          <h3 class="text-2xl font-bold mb-3">{featuredService.title}</h3>
+          <p class="text-lg leading-relaxed opacity-95">{featuredService.description}</p>
+        </div>
+      </div>
+    )}
+    
+    {/* Regular services - responsive grid */}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+      {regularServices.map((service) => (
+        <div class="bg-white p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <div class="text-4xl md:text-5xl mb-3 md:mb-4">{service.icon}</div>
+          <h3 class="text-lg md:text-xl font-semibold mb-2 md:mb-3 text-gray-900">{service.title}</h3>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed">{service.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
