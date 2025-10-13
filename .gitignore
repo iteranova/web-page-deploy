@@ -27,5 +27,6 @@ package-lock.json
 
 # Build outputs (if using any build tools in the future)
 build/
+astro.config.mjs
 .cache/
 .astro/
